@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a single dashboard page built using React, Redux, and Redux-Saga. The dashboard fetches data from a dummy API and displays the data in both table and pie chart formats. Users can switch between the table and pie chart views and filter the data by user and category. The project uses Ant Design for the UI components and a charting library for data visualization.
+This project is a single dashboard page built using React, Redux, and Redux-Saga. The dashboard fetches data from a dummy API and displays the data in both table and pie chart formats. Users can switch between the table and pie chart views and filter the data by user and category. The project uses Material UI and Pure CSS  for the UI components and a charting library for data visualization.
 
 ## Features
 
