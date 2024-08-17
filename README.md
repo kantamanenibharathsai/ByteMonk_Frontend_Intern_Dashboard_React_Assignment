@@ -21,7 +21,7 @@ This project is a single dashboard page built using React, Redux, and Redux-Saga
 - **Material UI**: UI component library.
 - **Charting Library**: Used for creating pie charts (e.g., Recharts, Chart.js, etc.).
 - **Axios**: For making API requests.
-- **other features**: added toogle, image upload, theme, font, etc..
+- **other features**: added light/dark toogle, profile image upload, theme, used Typescript to ensure typesafety
 
 ## API
 
