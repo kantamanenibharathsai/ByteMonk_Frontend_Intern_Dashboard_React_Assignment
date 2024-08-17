@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# Dashboard with Table and Pie Chart Views
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a single dashboard page built using React, Redux, and Redux-Saga. The dashboard fetches data from a dummy API and displays the data in both table and pie chart formats. Users can switch between the table and pie chart views and filter the data by user and category. The project uses Ant Design for the UI components and a charting library for data visualization.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Data Fetching**: Uses Redux-Saga to handle side effects and fetch data from the API.
+- **Table View**: Displays data in a structured table format.
+- **Pie Chart View**: Visualizes data in a pie chart format.
+- **View Switching**: Allows users to toggle between table and pie chart views.
+- **Filtering**: Filters data by user and category, affecting both views.
+- **Responsive Design**: The dashboard is designed to be responsive across various devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technology Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React**: Frontend library for building the user interface.
+- **Redux**: State management library.
+- **Redux-Saga**: Middleware for handling side effects in Redux.
+- **Material UI**: UI component library.
+- **Charting Library**: Used for creating pie charts (e.g., Recharts, Chart.js, etc.).
+- **Axios**: For making API requests.
+- **other features**: added toogle, image upload, theme, font, etc..
 
-### `npm test`
+## API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Data is fetched from the following API endpoint: http://52.168.1.54:8080/api/v1/userActivities
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Check once the URL I am getting CORS Error(Internal Server Error - 500), so I mocked the JsonData, which given the response in the Postman
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

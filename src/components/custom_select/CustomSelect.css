@@ -1,0 +1,119 @@
+
+.select-menu{
+    width: 380px;
+    position:relative;
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 55px;
+    background: #42e0f5;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+    color: #000;
+}
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+    color: #000;
+}
+.select-menu .options{
+    position: absolute;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #42e0f5;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: none;
+    top: 58px;
+    z-index: 2;
+    list-style-type: none;
+    padding-left: 0;
+    width: 380px;
+}
+.select-menu.active .options{
+    position: absolute;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #42e0f5;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: block;
+    top: 58px;
+    left: 0;
+    z-index: 2;
+    width: 380px;
+
+}
+.options .option{
+    display: flex;
+    height: 40px;
+    cursor: pointer;
+    /* padding: 0 16px; */
+    border-radius: 8px;
+    align-items: center;
+    width: 100%;
+    padding-left: 15px;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+
+.option .option-text{
+    font-size: 14px;
+    color: #333;
+}
+
+@media screen and (max-width: 600px) {
+    .select-menu{
+        width: 100%;
+    }
+
+    .select-menu .options{
+        width: 100%;
+    }
+    .select-menu.active .options{
+        width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 899px) {
+    .select-menu {
+      width: 100%;
+    }
+  
+    .select-menu .options {
+      width: 100%;
+    }
+  
+    .select-menu.active .options {
+      width: 100%;
+    }
+  }
+
+
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    .select-menu{
+        width: 290px;
+    }
+  
+    .select-menu .options {
+        width: 290px;
+    }
+  
+    .select-menu.active .options {
+        width: 290px;
+    }
+  }
