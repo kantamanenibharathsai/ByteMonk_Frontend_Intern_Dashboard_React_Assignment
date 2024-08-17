@@ -133,7 +133,6 @@ const dashboardStyles = {
         boxShadow: 3,
         '&:hover': { backgroundColor: "#42e0f5" },
         borderRadius: 2,
-        width: {sm: ""}
       }
 }
 
